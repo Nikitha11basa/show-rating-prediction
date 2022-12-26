@@ -16,8 +16,5 @@ def predict():
     float_features = [float(x) for x in request.form.values()]
     features = [np.array(float_features)]
     prediction = model.predict(features)
-    if int(prediction)== 0:
-            prediction ='show is good'
-    else:
-         prediction ='show is bad'           
+         
 return render_template("index.html", prediction_text = "prediction:{}".format(prediction))
