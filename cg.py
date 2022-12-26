@@ -259,45 +259,45 @@ print('Mean_Squared_Error :' ,mse)
 print('r_square_value :',r_squared)
 
 #Actual vs Predicted
-c = [i for i in range(1,81,1)]
-fig = plt.figure()
-plt.plot(c,media.Views_show, color="blue", linewidth=2.5, linestyle="-")
-plt.plot(c,Predicted_views, color="red",  linewidth=2.5, linestyle="-")
-fig.suptitle('Actual and Predicted', fontsize=20)              # Plot heading 
-plt.xlabel('Index', fontsize=18)                               # X-label
-plt.ylabel('Views', fontsize=16)
+# c = [i for i in range(1,81,1)]
+# fig = plt.figure()
+# plt.plot(c,media.Views_show, color="blue", linewidth=2.5, linestyle="-")
+# plt.plot(c,Predicted_views, color="red",  linewidth=2.5, linestyle="-")
+# fig.suptitle('Actual and Predicted', fontsize=20)              # Plot heading 
+# plt.xlabel('Index', fontsize=18)                               # X-label
+# plt.ylabel('Views', fontsize=16)
 
-# Error terms
-c = [i for i in range(1,81,1)]
-fig = plt.figure()
-plt.plot(c,media.Views_show-Predicted_views, color="blue", linewidth=2.5, linestyle="-")
-fig.suptitle('Error Terms', fontsize=20)              # Plot heading 
-plt.xlabel('Index', fontsize=18)                      # X-label
-plt.ylabel('Views_show-Predicted_views', fontsize=16)                # Y-label
+# # Error terms
+# c = [i for i in range(1,81,1)]
+# fig = plt.figure()
+# plt.plot(c,media.Views_show-Predicted_views, color="blue", linewidth=2.5, linestyle="-")
+# fig.suptitle('Error Terms', fontsize=20)              # Plot heading 
+# plt.xlabel('Index', fontsize=18)                      # X-label
+# plt.ylabel('Views_show-Predicted_views', fontsize=16)                # Y-label
 
-# Making predictions using the model
-X = media[['weekend','Character_A','Visitors']]
-X = sm.add_constant(X)
-Predicted_views = lm_6.predict(X)
+# # Making predictions using the model
+# X = media[['weekend','Character_A','Visitors']]
+# X = sm.add_constant(X)
+# Predicted_views = lm_6.predict(X)
 
-from sklearn.metrics import mean_squared_error, r2_score
-mse = mean_squared_error(media.Views_show, Predicted_views)
-r_squared = r2_score(media.Views_show, Predicted_views)
-print('Mean_Squared_Error :' ,mse)
-print('r_square_value :',r_squared)
+# from sklearn.metrics import mean_squared_error, r2_score
+# mse = mean_squared_error(media.Views_show, Predicted_views)
+# r_squared = r2_score(media.Views_show, Predicted_views)
+# print('Mean_Squared_Error :' ,mse)
+# print('r_square_value :',r_squared)
 
-#Actual vs Predicted
-c = [i for i in range(1,81,1)]
-fig = plt.figure()
-plt.plot(c,media.Views_show, color="blue", linewidth=2.5, linestyle="-")
-plt.plot(c,Predicted_views, color="red",  linewidth=2.5, linestyle="-")
-fig.suptitle('Actual and Predicted', fontsize=20)              # Plot heading 
-plt.xlabel('Index', fontsize=18)                               # X-label
-plt.ylabel('Views', fontsize=16)
+# #Actual vs Predicted
+# c = [i for i in range(1,81,1)]
+# fig = plt.figure()
+# plt.plot(c,media.Views_show, color="blue", linewidth=2.5, linestyle="-")
+# plt.plot(c,Predicted_views, color="red",  linewidth=2.5, linestyle="-")
+# fig.suptitle('Actual and Predicted', fontsize=20)              # Plot heading 
+# plt.xlabel('Index', fontsize=18)                               # X-label
+# plt.ylabel('Views', fontsize=16)
 
-c = [i for i in range(1,81,1)]
-fig = plt.figure()
-plt.plot(c,media.Views_show-Predicted_views, color="blue", linewidth=2.5, linestyle="-")
-fig.suptitle('Error Terms', fontsize=20)              # Plot heading 
-plt.xlabel('Index', fontsize=18)                      # X-label
-plt.ylabel('Views_show-Predicted_views', fontsize=16)                # Y-label
+# c = [i for i in range(1,81,1)]
+# fig = plt.figure()
+# plt.plot(c,media.Views_show-Predicted_views, color="blue", linewidth=2.5, linestyle="-")
+# fig.suptitle('Error Terms', fontsize=20)              # Plot heading 
+# plt.xlabel('Index', fontsize=18)                      # X-label
+# plt.ylabel('Views_show-Predicted_views', fontsize=16)                # Y-label
