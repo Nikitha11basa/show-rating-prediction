@@ -20,4 +20,4 @@ def predict():
             prediction ='show is good'
     else:
          prediction ='show is bad'           
-return render_template("index.html", prediction = prediction)
+return render_template("index.html", prediction_text = "prediction:{}".format(prediction))
