@@ -1,7 +1,6 @@
 pandas
 numpy
 pillow
-pip 
 Flask
 gunicorn
 sklearn
