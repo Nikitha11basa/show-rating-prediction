@@ -5,3 +5,4 @@ pip
 Flask
 gunicorn
 sklearn
+scikit-learn
