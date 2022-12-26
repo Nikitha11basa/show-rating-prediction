@@ -17,15 +17,8 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Date" placeholder="Date" required="required" />
-        <input type="text" name="Views_show" placeholder="Views_show" required="required" />
-		<input type="text" name="Visitors" placeholder="Visitors" required="required" />
-		<input type="text" name="Views_platform" placeholder="Views_platform" required="required" />
-		<input type="text" name="Ad_impression" placeholder="Ad_impression" required="required" />
-		<input type="text" name="Cricket_match_india" placeholder="Cricket_match_india" required="required" />
-
-
-
+    	<input type="text" name="Visitors" placeholder="Date" required="required" />
+        <input type="text" name="Weekday" placeholder="Views_show" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
